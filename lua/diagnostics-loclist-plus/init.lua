@@ -135,5 +135,10 @@ function M.setup(opts)
     })
 end
 
+function M.get_config()
+  local copied_config = vim.deepcopy(config)
+  return copied_config
+end
+
 return M
 
