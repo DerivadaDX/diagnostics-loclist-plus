@@ -42,7 +42,7 @@ local function check_required_modules(ok, error)
 end
 
 local function check_plugin_configuration(ok, warn)
-  local config_ok, config = pcall(require('diagnostics-loclist').get_config)
+  local config_ok, config = pcall(require('diagnostics-loclist-plus').get_config)
 
   if config_ok and config then
     ok('Plugin configuration loaded')
