@@ -1,4 +1,4 @@
-# diagnostics-loclist-plus
+# Diagnostics Loclist Plus for Neovim
 
 A Neovim plugin that provides an enhanced location list for diagnostics with automatic updates and visibility controls.
 
@@ -15,23 +15,14 @@ A Neovim plugin that provides an enhanced location list for diagnostics with aut
 Using vim-plug:
 
 ```vim
-Plug 'your-username/diagnostics-loclist.nvim'
+Plug 'DerivadaDX/diagnostics-loclist-plus.nvim'
 ```
 
 Then add to your init.vim/init.lua:
 
 ```lua
-require('diagnostics-loclist').setup({
-    allowed_filetypes = { 'lua', 'python', 'javascript' }, -- Add your desired filetypes
-    diagnostic_opts = {
-        open = false,
-        severity = {
-            min = vim.diagnostic.severity.HINT,
-            max = vim.diagnostic.severity.ERROR,
-        },
-    },
-    update_delay = 750,
-    max_diagnostics_lines = 10,
+require('diagnostics-loclist-plus').setup({
+    allowed_filetypes = { 'lua' },
 })
 ```
 
