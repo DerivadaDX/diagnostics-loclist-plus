@@ -1,4 +1,6 @@
-Author:  DerivadaDX
+*diagnostics-loclist-plus.txt*  Enhanced diagnostic location list for Neovim
+
+Author:  Iván Fernández <github.com/DerivadaDX>
 License: MIT
 Version: 1.0.0
 
@@ -15,9 +17,9 @@ CONTENTS                                   *diagnostics-loclist-plus-contents*
 ==============================================================================
 1. INTRODUCTION                        *diagnostics-loclist-plus-introduction*
 
-diagnostics-loclist-plus is a Neovim plugin that enhances the built-in location
-list functionality for diagnostics with automatic updates and improved visibility
-controls.
+diagnostics-loclist-plus is a Neovim plugin that enhances the built-in
+location list functionality for diagnostics with automatic updates and
+improved visibility controls.
 
 ==============================================================================
 2. REQUIREMENTS                        *diagnostics-loclist-plus-requirements*
