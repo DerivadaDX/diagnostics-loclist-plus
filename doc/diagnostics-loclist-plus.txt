@@ -73,3 +73,5 @@ get_config()                             *diagnostics-loclist-plus.get_config*
 
 ==============================================================================
 
+vim:tw=78:ts=8:expandtab:noet:ft=help:
+
