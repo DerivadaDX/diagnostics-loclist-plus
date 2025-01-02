@@ -1,0 +1,77 @@
+*diagnostics-loclist-plus* Enhanced diagnostic location list for Neovim
+
+Author:  Iván Fernández <github.com/DerivadaDX>
+License: MIT
+Version: 1.0.0
+
+==============================================================================
+CONTENTS                                   *diagnostics-loclist-plus-contents*
+
+    1. Introduction ................. |diagnostics-loclist-plus-introduction|
+    2. Requirements ................. |diagnostics-loclist-plus-requirements|
+    3. Installation ................. |diagnostics-loclist-plus-installation|
+    4. Configuration ................ |diagnostics-loclist-plus-configuration|
+    5. Commands ..................... |diagnostics-loclist-plus-commands|
+    6. API .......................... |diagnostics-loclist-plus-api|
+
+==============================================================================
+1. INTRODUCTION                        *diagnostics-loclist-plus-introduction*
+
+diagnostics-loclist-plus is a Neovim plugin that enhances the built-in
+location list functionality for diagnostics with automatic updates and
+improved visibility controls.
+
+==============================================================================
+2. REQUIREMENTS                        *diagnostics-loclist-plus-requirements*
+
+- Neovim >= 0.8.0
+
+==============================================================================
+3. INSTALLATION                        *diagnostics-loclist-plus-installation*
+
+Using vim-plug:
+>
+    Plug 'DerivadaDX/diagnostics-loclist-plus.nvim'
+<
+
+==============================================================================
+4. CONFIGURATION                      *diagnostics-loclist-plus-configuration*
+
+Configure the plugin by calling the setup function:
+>
+    require('diagnostics-loclist').setup({
+      allowed_filetypes = {},      -- Filetypes to enable the plugin for
+      diagnostic_opts = {
+        open = false,              -- Auto-open the loclist
+        severity = {
+          min = vim.diagnostic.severity.HINT,
+          max = vim.diagnostic.severity.ERROR,
+        },
+      },
+      update_delay = 750,          -- Delay before updating (ms)
+      max_diagnostics_lines = 10,  -- Maximum window height
+    })
+<
+
+==============================================================================
+5. COMMANDS                                *diagnostics-loclist-plus-commands*
+
+:ToggleLoclist                                                *:ToggleLoclist*
+    Toggle the diagnostics location list window.
+
+==============================================================================
+6. API                                          *diagnostics-loclist-plus-api*
+
+setup({opts})                                 *diagnostics-loclist-plus.setup*
+    Initialize the plugin with the given configuration options.
+
+toggle_loclist()                     *diagnostics-loclist-plus.toggle_loclist*
+    Programmatically toggle the location list window.
+
+get_config()                             *diagnostics-loclist-plus.get_config*
+    Returns a copy of the current configuration options.
+
+==============================================================================
+
+vim:tw=78:ts=8:expandtab:noet:ft=help:
+
