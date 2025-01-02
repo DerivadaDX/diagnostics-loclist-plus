@@ -1,4 +1,4 @@
-*diagnostics-loclist-plus.txt*  Enhanced diagnostic location list for Neovim
+*diagnostics-loclist-plus* Enhanced diagnostic location list for Neovim
 
 Author:  Iván Fernández <github.com/DerivadaDX>
 License: MIT
